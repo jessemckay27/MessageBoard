@@ -15,6 +15,15 @@ module.exports = function(environment) {
         // Prevent Ember Data from overriding Date.parse.
         Date: false
       }
+
+    },
+
+    firebase: {
+      apiKey: "AIzaSyA747MAXRsNNB6reLI1HytrqmjBfLNCj0g",
+      authDomain: "message-board-2a1ad.firebaseapp.com",
+      databaseURL: "https://message-board-2a1ad.firebaseio.com",
+      storageBucket: "message-board-2a1ad.appspot.com",
+      messagingSenderId: "387658411544"
     },
 
     APP: {

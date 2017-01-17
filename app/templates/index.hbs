@@ -1,0 +1,13 @@
+{{outlet}}
+
+<h1>Welcome to the Message Board!</h1>
+<p>This board is used for asking and answering questions!</p>
+
+<div>
+  {{#each model as |post|}}
+    {{post-tile post=post destroyPost="destroyPost"}}
+  {{/each}}
+</div>
+
+
+<!-- {{#link-to 'question'}}Question{{/link-to}} -->
