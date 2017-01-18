@@ -1,6 +1,6 @@
 {{yield}}
   <h2>Edit Your Post</h2>
-  <div>
+  <div class="newpost-wrap">
     <form>
       <div class="form-group">
         <label for="name">Name</label>
@@ -16,6 +16,6 @@
         <label for="notes">Notes</label>
         {{input value=city id="city" placeholder=post.notes}}
       </div>
-      <button {{action 'update' post}}>Update</button>
+      <button class="btn" {{action 'update' post}}>Update</button>
     </form>
   </div>

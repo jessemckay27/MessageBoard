@@ -1,8 +1,9 @@
 {{yield}}
-
-<h1>Current Question:</h1>
-<div>Name:  {{post.name}}</div>
-<div>Question:  {{post.question}}</div>
-<div>Notes: {{post.notes}}</div>
-<button {{action 'delete' post}}>Delete Question</button>
-<br>
+<h2>Question</h2>
+<div class="newpost-wrap">
+  <div>Name:  {{post.name}}</div>
+  <div>Question:  {{post.question}}</div>
+  <div>Notes: {{post.notes}}</div>
+  <button class="btn" {{action 'delete' post}}>Delete Question</button>
+  <br>
+</div>
