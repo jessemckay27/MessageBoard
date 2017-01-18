@@ -1,11 +1,8 @@
 {{outlet}}
-
 <h2>Questions</h2>
-
 <div>
-  {{#each model as |post|}}
+  {{#each model.posts as |post|}}
     {{post-tile post=post update="update" destroyPost="destroyPost"}}
   {{/each}}
 </div>
-
 {{new-post savePost="savePost"}}

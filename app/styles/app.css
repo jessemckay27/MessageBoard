@@ -2,6 +2,7 @@ html {
   height: 100%;
 }
 body {
+  height: inherit;
   background-color:  #f5f5f5;
   height:
 }
@@ -42,13 +43,19 @@ body {
 }
 
 #footer-wrap {
-  background-color: #;
-  border-top: 1px solid #e5e5e5;
-  height: 50px;
-  position: absolute;
+  height: 60px;
+  background-color: #fff;
+  border-top: 1px solid #a6a6a6;
+  line-height: 60px;
+  margin-top: 50px;
+  position: relative;
+  bottom: 0;
   width: 100%;
-  bottom: 0px;
-  line-height: 50px;
+  padding-left: 10px;
+}
+
+#footer-wrap div {
+  padding-left: 0;
 }
 
 .btn {
@@ -57,4 +64,48 @@ body {
 
 h2 {
   font-weight: 600;
+}
+
+.post-tile {
+  margin-bottom: 10px;
+  background-color: #edeefb;
+}
+
+#new-answer {
+  margin-top: 20px;
+  border: 1px solid #3fa9f5;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #aae0ff;
+}
+
+.answer-btn {
+  background-color: #3fa9f5;
+}
+
+#new-answer * {
+  margin: 20px;
+}
+
+#new-answer h2 {
+  margin-bottom: 0px;
+}
+
+.review-wrap {
+  border: 1px solid #3fa9f5;
+  background-color: #aae0ff;
+}
+
+.review-wrap input {
+  border: 1px solid #3fa9f5;
+}
+
+.review-wrap button {
+  background-color: #3fa9f5;
+  color: #fff;
+}
+
+
+.bottom-fix {
+  margin-bottom: 10px;
 }
