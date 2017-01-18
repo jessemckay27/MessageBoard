@@ -1,10 +1,20 @@
 html {
   height: 100%;
+  box-sizing: border-box;
 }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
-  height: inherit;
+  position: relative;
+  padding-bottom: 60px;;
   background-color:  #f5f5f5;
-  height:
+  min-height: 100%;
+  padding-bottom: 60px;
 }
 
 .question-wrap {
@@ -43,19 +53,17 @@ body {
 }
 
 #footer-wrap {
+  text-align: center;
   height: 60px;
   background-color: #fff;
-  border-top: 1px solid #a6a6a6;
+  border-top: 1px solid #e5e5e5;
   line-height: 60px;
   margin-top: 50px;
-  position: relative;
+  position: absolute;
   bottom: 0;
-  width: 100%;
-  padding-left: 10px;
-}
-
-#footer-wrap div {
-  padding-left: 0;
+  left: 0;
+  right: 0;
+  color: #3fa9f5;
 }
 
 .btn {
@@ -104,7 +112,6 @@ h2 {
   background-color: #3fa9f5;
   color: #fff;
 }
-
 
 .bottom-fix {
   margin-bottom: 10px;
