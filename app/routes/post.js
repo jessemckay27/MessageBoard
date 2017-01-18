@@ -4,18 +4,19 @@ export default Ember.Route.extend({
   model(params) {
     return this.store.findRecord('post', params.post_id);
   },
-  update(post, params) {
-  Object.keys(params).forEach(function(key) {
-    if(params[key]!==undefined) {
-      post.set(key,params[key]);
+  actions: {
+    update(post, params) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key]!==undefined) {
+          post.set(key,params[key]);
+        }
+      });
+      post.save();
+      this.transitionTo('index');
+    },
+    destroyRental(post) {
+      post.destroyRecord();
+      this.transitionTo('index');
     }
-  });
-  post.save();
-  this.transitionTo('index');
-},
-
-  destroyPost(post) {
-    post.destroyRecord();
-    this.transitionTo('index');
   }
 });
