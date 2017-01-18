@@ -17,11 +17,12 @@ _This page allows the user to enter a question on a message board. The question 
 
 ## Setup Instructions
 * Clone the repository
-* Navigate to directory
-* Run the command:  npm install
+* Navigate to the directory
+* Run the command: npm install
 * Run the command: bower install
 * To initialize the server, run the command: ember server
 * Open you web browser at http://localhost:4200
+* To stop the server, press CTRL+C 
 
 ## Support and contact details
 
