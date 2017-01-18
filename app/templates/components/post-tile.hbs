@@ -1,7 +1,8 @@
 {{yield}}
-<div>
-  <div>Name:  {{post.name}}</div>
-  <div>Question:  {{post.question}}</div>
-  <button {{action 'delete' post}}>Delete Question</button>
-  <br>
-</div>
+{{#link-to 'post' post.id}}
+  <div class="question-wrap">
+    <div>Name:  {{post.name}}</div>
+    <div>Question:  {{post.question}}</div>
+    <br>
+  </div>
+{{/link-to}}

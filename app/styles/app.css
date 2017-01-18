@@ -1,0 +1,18 @@
+body {
+  background-color:  #f5f5f5;
+}
+
+.question-wrap {
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.newpost-wrap {
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
