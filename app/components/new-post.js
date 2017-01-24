@@ -8,6 +8,11 @@ export default Ember.Component.extend({
         question: this.get('question'),
         notes: this.get('notes')
       };
+
+      this.set('name', "");
+      this.set('question', "");
+      this.set('notes', "");
+
       this.sendAction('savePost', params);
     }
   }

@@ -8,6 +8,7 @@ export default Ember.Component.extend({
         question: this.get('question'),
         notes: this.get('notes'),
       };
+
       this.sendAction('update', post, params);
     }
   }

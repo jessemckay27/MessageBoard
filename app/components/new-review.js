@@ -12,6 +12,10 @@ export default Ember.Component.extend({
        content: this.get('content'),
        post: this.get('post')
      };
+
+     this.set('author', "");
+     this.set('content', "");
+
      this.set('addNewReview', false);
      this.sendAction('saveReview', params);
     }
